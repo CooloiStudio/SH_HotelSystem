@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.orm.Task_configure" table="task_configure">
+        <id name="task_type" type="int">
+            <column name="task_type"/>
+        <generator class="native"/>
+        </id>
+        <property name="task_name">
+            <column name="task_name" not-null="false"/>
+        </property>
+    </class>
+</hibernate-mapping>

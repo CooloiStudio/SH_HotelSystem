@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.orm.Task_execute" table="task_execute">
+        <property name="task_id">
+            <column name="task_id" not-null="false"/>
+        </property>
+        <property name="start_time">
+            <column name="start_time" not-null="false"/>
+        </property>
+        <property name="end_time">
+            <column name="end_time" not-null="false"/>
+        </property>
+        <property name="limit_time">
+            <column name="limit_time" not-null="false"/>
+        </property>
+        <property name="content">
+            <column name="content" not-null="false"/>
+        </property>
+        <property name="task_type">
+            <column name="task_type" not-null="false"/>
+        </property>
+        <property name="staff_id">
+            <column name="staff_id" not-null="false"/>
+        </property>
+        <property name="re_turn">
+            <column name="re_turn" not-null="false"/>
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.orm.Staff" table="staff">
+        <id name="staff_id" type="int">
+            <column name="staff_id"/>
+        <generator class="native"/>
+        </id>
+        <property name="gender">
+            <column name="gender" not-null="false"/>
+        </property>
+        <property name="staff_name">
+            <column name="staff_name" not-null="false"/>
+        </property>
+        <property name="staff_tel">
+            <column name="staff_tel" not-null="false"/>
+        </property>
+        <property name="role">
+            <column name="role" not-null="false"/>
+        </property>
+        <property name="birth">
+            <column name="birth" not-null="false"/>
+        </property>
+        <property name="create_time">
+            <column name="create_time" not-null="false"/>
+        </property>
+        <property name="org_id">
+            <column name="org_id" not-null="false"/>
+        </property>
+    </class>
+</hibernate-mapping>
