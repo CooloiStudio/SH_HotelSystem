@@ -7,5 +7,6 @@
     <property name="hibernate.connection.url">jdbc:mysql://localhost:3140/hotel?useUnicode=true&amp;characterEncoding=gbk</property>
     <property name="hibernate.connection.username">root</property>
     <property name="hibernate.connection.password">root</property>
+    <mapping resource="com/orm/Staff.hbm.xml"/>
   </session-factory>
 </hibernate-configuration>

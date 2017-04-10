@@ -9,8 +9,9 @@
         <action name="test" class="Action.TestAction">
             <result name="Test_SUCCESS">/example/test1.jsp</result>
         </action>
-<!--        <action name="test1" class="Action.TestAction1">
-            <result name="test_success">/example/test1.jsp</result>
-        </action>-->
+        <action name="login" class="Action.LoginAction">
+            <result name="login_success">/index/index.jsp</result>
+            <result name="input">/index/login.jsp</result>
+        </action>
     </package>
 </struts>

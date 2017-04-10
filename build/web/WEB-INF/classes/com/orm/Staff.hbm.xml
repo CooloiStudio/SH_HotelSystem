@@ -18,14 +18,17 @@
         <property name="role">
             <column name="role" not-null="false"/>
         </property>
-        <property name="birth">
+<!--        <property name="birth">
             <column name="birth" not-null="false"/>
         </property>
         <property name="create_time">
             <column name="create_time" not-null="false"/>
-        </property>
+        </property>-->
         <property name="org_id">
             <column name="org_id" not-null="false"/>
+        </property>
+        <property name="password">
+            <column name="password" not-null="false"/>
         </property>
     </class>
 </hibernate-mapping>

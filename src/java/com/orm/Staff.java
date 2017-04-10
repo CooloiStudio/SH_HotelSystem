@@ -18,22 +18,24 @@ public class Staff {
     private String staff_name;
     private int staff_tel;
     private int role;
-    private Date birth;
-    private Date create_time;
+//    private Date birth;
+//    private Date create_time;
     private int org_id;
+    private String password;
 
     public Staff() {
     }
 
-    public Staff(int staff_id, int gender, String staff_name, int staff_tel, int role, Date birth, Date create_time, int org_id) {
+    public Staff(int staff_id, int gender, String staff_name, int staff_tel, int role,/* Date birth, Date create_time,*/ int org_id, String password) {
         this.staff_id = staff_id;
         this.gender = gender;
         this.staff_name = staff_name;
         this.staff_tel = staff_tel;
         this.role = role;
-        this.birth = birth;
-        this.create_time = create_time;
+//        this.birth = birth;
+//        this.create_time = create_time;
         this.org_id = org_id;
+        this.password = password;
     }
 
     public int getOrg_id() {
@@ -83,20 +85,28 @@ public class Staff {
     public void setRole(int role) {
         this.role = role;
     }
+//
+//    public Date getBirth() {
+//        return birth;
+//    }
+//
+//    public void setBirth(Date birth) {
+//        this.birth = birth;
+//    }
+//
+//    public Date getCreate_time() {
+//        return create_time;
+//    }
+//
+//    public void setCreate_time(Date create_time) {
+//        this.create_time = create_time;
+//    }
 
-    public Date getBirth() {
-        return birth;
+    public String getPassword() {
+        return password;
     }
 
-    public void setBirth(Date birth) {
-        this.birth = birth;
-    }
-
-    public Date getCreate_time() {
-        return create_time;
-    }
-
-    public void setCreate_time(Date create_time) {
-        this.create_time = create_time;
+    public void setPassword(String password) {
+        this.password = password;
     }
 }
